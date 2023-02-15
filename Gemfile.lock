@@ -104,7 +104,7 @@ GEM
     colored2 (3.1.2)
     concurrent-ruby (1.1.10)
     connection_pool (2.2.5)
-    cose (1.2.1)
+    cose (1.3.0)
       cbor (~> 0.5.9)
       openssl-signature_algorithm (~> 1.0)
     cppjieba_rb (0.4.2)
@@ -116,7 +116,7 @@ GEM
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
     diffy (3.4.2)
-    digest (3.1.0)
+    digest (3.0.0)
     discourse-ember-rails (0.18.6)
       active_model_serializers
       ember-data-source (>= 1.0.0.beta.5)
@@ -268,7 +268,7 @@ GEM
       timeout
     net-protocol (0.1.3)
       timeout
-    net-smtp (0.3.1)
+    net-smtp (0.2.2)
       digest
       net-protocol
       timeout
@@ -314,9 +314,9 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
-    openssl (3.0.0)
-    openssl-signature_algorithm (1.2.1)
-      openssl (> 2.0, < 3.1)
+    openssl (3.1.0)
+    openssl-signature_algorithm (1.3.0)
+      openssl (> 2.0)
     optimist (3.0.1)
     parallel (1.22.1)
     parallel_tests (3.12.0)
@@ -540,6 +540,7 @@ DEPENDENCIES
   cppjieba_rb
   css_parser
   diffy
+  digest (= 3.0.0)
   discourse-ember-rails (= 0.18.6)
   discourse-ember-source (~> 3.12.2)
   discourse-fonts
@@ -583,6 +584,9 @@ DEPENDENCIES
   multi_json
   mustache
   net-http
+  net-imap (~> 0.2.1)
+  net-pop (~> 0.1.1)
+  net-smtp (~> 0.2.1)
   nokogiri
   oj (= 3.13.14)
   omniauth
